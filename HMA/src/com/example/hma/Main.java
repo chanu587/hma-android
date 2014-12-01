@@ -21,6 +21,7 @@ import com.android.volley.VolleyError;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.uncc.sem1.ssdi.hma.android.json.GsonDateDeSerializer;
+import com.uncc.sem1.ssdi.hma.monitoring.domain.BiologicalProfile;
 import com.uncc.sem1.ssdi.hma.monitoring.domain.User;
 import com.uncc.sem1.ssdi.hma.monitoring.services.response.UserResponse;
 
@@ -84,6 +85,8 @@ public class Main extends Activity {
 									String pwd_check = user_check.getPassword();
 									String uname_check = user_check
 											.getUsername();
+									BiologicalProfile bp = response.getUser().getBiologicalProfile();
+									
 									// txtView.setText("Response: " +
 									// response.getResponseMsg() + " :: " +
 									// response.getStatus());
@@ -92,6 +95,13 @@ public class Main extends Activity {
 									if (pwd_check.equals(pwd_s)) {
 										Intent signin_intent = new Intent(
 												Main.this, Signin_Success.class);
+										signin_intent.putExtra("height", bp.getHeight());
+										signin_intent.putExtra("weight", bp.getWeight());
+										signin_intent.putExtra("age",response.getUser().getAge());
+										signin_intent.putExtra("hip", bp.getHip());
+										signin_intent.putExtra("neck", bp.getNeck());
+										signin_intent.putExtra("waist", bp.getWaist());
+										signin_intent.putExtra("wrist", bp.getWrist());
 										startActivity(signin_intent);
 									} else {
 										Toast.makeText(getApplicationContext(),

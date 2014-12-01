@@ -111,6 +111,11 @@
             android:label="Record your activity">
         </activity>
         
+        <activity
+            android:name=".Metrics"
+            android:label="Your health">
+        </activity>
+        
         
         
     </application>
