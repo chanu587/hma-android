@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg1"
+    tools:context="co.example.vishnu.hma.Metrics"
+    android:id="@+id/text">
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Body Mass Index"
+        android:id="@+id/BMI"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Basal Metabolic Rate"
+        android:id="@+id/BMR"
+        android:layout_below="@+id/BMI"
+        android:layout_alignLeft="@+id/BMI"
+        android:layout_alignStart="@+id/BMI" />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/BFS"
+        android:text="Body Frame Size"
+        android:layout_below="@+id/BMR"
+        android:layout_alignLeft="@id/BMR"
+        android:layout_alignStart="@+id/BMR"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/BFP"
+        android:text="Body Fat Percentage"
+        android:layout_below="@+id/BFS"
+        android:layout_alignLeft="@id/BFS"
+        android:layout_alignStart="@+id/BFS"
+        />
+    
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/WHR"
+        android:text="Waist to Hip Ratio"
+        android:layout_below="@+id/BFP"
+        android:layout_alignLeft="@id/BFS"
+        android:layout_alignStart="@+id/BFS"
+        />
+
+</RelativeLayout>
+

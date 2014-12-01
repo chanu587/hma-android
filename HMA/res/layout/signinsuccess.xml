@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg1" >
+
+    <Button
+        android:id="@+id/track"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/foot"
+        android:layout_centerHorizontal="true"
+        android:text="Track route" />
+
+    <Button
+        android:id="@+id/foot"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/metrics"
+        android:layout_alignLeft="@+id/metrics"
+        android:text="Footsteps" />
+
+    <Button
+        android:id="@+id/hosp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/record"
+        android:layout_centerVertical="true"
+        android:text="View hospitals" />
+
+    <Button
+        android:id="@+id/metrics"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hosp"
+        android:layout_alignLeft="@+id/hosp"
+        android:text="View metrics" />
+
+    <Button
+        android:id="@+id/target"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/track"
+        android:layout_below="@+id/hosp"
+        android:text="Set target" />
+
+    <Button
+        android:id="@+id/record"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/target"
+        android:layout_below="@+id/target"
+        android:text="Record activity" />
+
+</RelativeLayout>

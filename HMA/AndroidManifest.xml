@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hma"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+    <permission
+        android:name="in.wptrafficanalyzer.locationplacedetailsv2.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"/>
+ 
+    <uses-permission android:name="in.wptrafficanalyzer.locationplacedetailsv2.permission.MAPS_RECEIVE"/>
+ 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+        <meta-data
+    android:name="com.google.android.maps.v2.API_KEY"
+    android:value="AIzaSyBqrwKIdF03t2woxK_n4YKupNWZAZyXu-o"/>
+        <activity
+            android:name=".Main"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Guest"
+            android:label="Welcome">
+        </activity>
+        <activity
+            android:name=".Signup"
+            android:label="Enter your details">
+        </activity>
+        <activity
+            android:name=".BMI"
+            android:label="View BMI">
+        </activity>
+        <activity
+            android:name=".BMR"
+            android:label="View BMR">
+        </activity>
+        <activity
+            android:name=".BFS"
+            android:label="View BFS">
+        </activity>
+        <activity
+            android:name=".BFP"
+            android:label="View BFP">
+        </activity>
+        <activity
+            android:name=".WHR"
+            android:label="View WHR">
+        </activity>
+        <activity
+            android:name=".SIGNUP_SUCCESS"
+            android:label="View WHR">
+        </activity>
+        <activity
+            android:name=".Signin_Success"
+            android:label="Welcome">
+        </activity>
+        <activity
+            android:name=".Hospitals"
+            android:label="Place details">
+        </activity>
+        <activity
+            android:name=".PlaceDetailsActivity"
+            android:label="Hospitals">
+        </activity>
+        
+        <activity
+            android:name=".MainActivity"
+            android:label="Footsteps">
+        </activity>
+        
+       
+         <activity
+            android:name=".TrackMap"
+            android:label="TrackMap">
+        </activity>
+        
+         <activity
+            android:name=".Target"
+            android:label="Set your target">
+        </activity>
+        
+         <activity
+            android:name=".Record"
+            android:label="Record your activity">
+        </activity>
+        
+        
+        
+    </application>
+
+</manifest>

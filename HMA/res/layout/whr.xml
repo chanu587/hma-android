@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg1"
+    tools:context="co.example.vishnu.hma.WHR">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Waist_Text"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="10dp"
+        android:text="Enter your waist size at the narrowest point"/>
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/waist"
+        android:inputType="number"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="5dp"
+        android:hint="Inches"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Hip_Text"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="10dp"
+        android:text="Enter your hip size at the widest point"/>
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/hip"
+        android:inputType="number"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="5dp"
+        android:hint="Inches"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Gender_Text"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="10dp"
+        android:text="Select your gender"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Gender_Text"
+        android:id="@+id/gender"
+        android:checkedButton="@+id/male"
+        android:layout_marginLeft="2dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/male"
+            android:text="Male" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/female"
+            android:text="Female" />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calc_WHR"
+        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true"
+        android:text="Calculate WHR"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/whrDisp"
+        android:layout_marginTop="365dp"
+        android:layout_marginLeft="70dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guide"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+

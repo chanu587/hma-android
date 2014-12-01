@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg1"
+    tools:context="co.example.vishnu.hma.BFS">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/height_text"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="50dp"
+        android:text="Height"/>
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/height"
+        android:inputType="number"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="205dp"
+        android:hint="Inches"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wrist_text"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="50dp"
+        android:text="Wrist Circumference"/>
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/wrist"
+        android:inputType="number"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="205dp"
+        android:hint="Inches"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/gender_text"
+        android:text="Gender"
+        android:layout_marginTop="145dp"
+        android:layout_marginLeft="50dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wrist"
+        android:id="@+id/gender"
+        android:checkedButton="@+id/male"
+        android:layout_marginLeft="205dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/male"
+            android:text="Male" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/female"
+            android:text="Female" />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calc_BFS"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="95dp"
+        android:layout_centerHorizontal="true"
+        android:text="Calculate BFS"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bfsDisp"
+        android:layout_marginTop="280dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
+
